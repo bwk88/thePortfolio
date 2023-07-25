@@ -1,0 +1,115 @@
+.intro {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-y: hidden;
+}
+
+.intro .left {
+  position: relative;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  overflow: hidden;
+}
+
+.intro .left .imgContainer {
+  width: 700px;
+  height: 700px;
+  background-color: crimson;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: right;
+}
+
+.intro .left img {
+  left: 20%;
+  top: 10%;
+  position: absolute;
+  height: 90%;
+}
+
+.intro .right {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  position: relative;
+}
+
+.intro .right .wrapper {
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.intro .right .wrapper span {
+  display: inline-block;
+}
+
+.intro .right .wrapper h1 {
+  font-size: 60px;
+  margin: 10px 0;
+}
+
+.intro .right .wrapper h2 {
+  font-size: 30px;
+}
+
+.intro .right .wrapper h3 {
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.intro .right .wrapper h3 .op {
+  opacity: 0;
+}
+
+.intro .right .wrapper h3 span {
+  color: #dc143c;
+}
+
+.intro .right a {
+  position: absolute;
+  bottom: 10px;
+  left: 40%;
+}
+
+.intro .right a img {
+  width: 30px;
+  -webkit-animation: arrowBlink 2s infinite;
+          animation: arrowBlink 2s infinite;
+}
+
+@-webkit-keyframes arrowBlink {
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes arrowBlink {
+  100% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=intro.css.map */

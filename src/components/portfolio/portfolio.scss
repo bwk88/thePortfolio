@@ -1,0 +1,179 @@
+@import "../../global.scss";
+
+
+.portfolio{
+    background-color: white;
+    // border: 1px solid black;
+    display: flex;
+    position: relative;
+    align-items:center;
+    justify-content: center;
+
+    .container{
+        // border: 1px solid black;
+        height: 95%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+
+        .top{
+            display: flex;
+            flex:1.5;
+            justify-content:space-between;
+            align-items: center;
+            gap: 1rem;
+            
+            h3{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // border: 1px solid black;
+                font-family: 'Poppins', sans-serif;
+                font-size: 49px;
+                font-weight: 700;
+                color: $mainColor;
+
+                span{
+                    color: crimson;
+                }
+
+            }
+            .line{
+                background-color: $mainColor;
+                height: 1px;
+                width: 80%;
+                opacity: 0.5;
+            }
+
+        }
+        
+        .about{
+            position: relative;
+            display: flex;
+            // justify-content:;
+            flex: 12;
+            gap: 3rem;
+
+            .aboutContainer{
+                display: flex;
+                flex-direction: column;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                flex: 8;
+
+                .dec{
+                    // background-color: blue;
+                    letter-spacing: 1px;
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content:space-around;
+                    flex-wrap: wrap;
+                    gap: 2.5rem;
+                    flex: 14;
+                    p{
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 14.5px;
+                        font-style: normal;
+                        font-weight: 500;
+                    }
+                    .firstPara::first-letter{
+                        font-size: 2.3rem;
+                        font-weight: 700;
+                        line-height: 1;
+                        color: white;
+
+                        padding: 0.6rem 0.5rem;
+                        background: crimson;
+
+                        margin-right: 0.5rem;
+
+                        float: left;
+                    }
+                }
+            
+                .tags{
+                    // background-color: blue;
+                    display: flex;
+                    flex-wrap: wrap;
+                    // justify-content: center;
+                    // align-items: center;
+                    font-weight: 500;
+                    gap: 1rem;
+                    
+                    img{
+                        width: 22px;
+                    }
+                    flex: 2;
+                }
+
+            }
+
+            .skills{
+
+                // background-color: skyblue;
+                flex: 4;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+
+                .techStack{
+                    flex: 5;
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                    
+                    h4{
+                        
+                        color: $mainColor;
+                        display: flex;
+                        gap: 1rem;
+                        img{
+                            width: 25px;
+                            // color: red;
+                        }
+                        
+                        span{
+                            font-family: 'Poppins', sans-serif;
+                            // width: fit-content;
+                            // font-size: 20px;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .techContainer{
+                        display: flex;
+                        flex-flow:wrap;
+                        gap: .5rem;
+                        
+                        span{
+                            font-family: 'Poppins', sans-serif;
+                            // width: 10px;
+                            margin: 2px;
+                            padding: 5px;
+                            font-size: 15px;
+                            font-weight:500;
+                            border: 1px solid $mainColor;
+                            border-radius: 5px;
+                        }
+
+                    }
+                    
+                }
+
+                .exp{
+                    .techStack{
+                        img{
+                            width: 22px;
+                        }
+                    }
+                    flex: 5;
+                }
+            }
+
+
+        }
+    }
+}

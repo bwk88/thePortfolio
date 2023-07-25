@@ -1,0 +1,30 @@
+html{
+    --cursor-color: #333 
+}
+
+.app{
+    overflow: hidden;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    .sections{
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: lightsalmon;
+        position: relative;
+        top: 70px;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none; //for firefox
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        
+        > *{
+            width: 100vw;
+            height: calc(100vh - 70px);
+            scroll-snap-align: start;
+            // transition: 1s ease-out;
+
+        }
+    }
+}
