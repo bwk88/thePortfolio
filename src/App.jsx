@@ -44,7 +44,7 @@ function App() {
         <Home />
         <Portfolio/>
         {/* <Works className='workPage' topBar={topBar} setTopBar={setTopBar} /> */}
-        <Project />
+        <Project topBar={topBar} setTopBar={setTopBar} />
         {/* <Testimonials/> */}
         <Contact/>
       </div>
