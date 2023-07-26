@@ -10,8 +10,34 @@ import Unravel from './Unravel';
 
 const Home = () => {
   const [currAnimation,setCurrAnimation] = useState(animationData);
-  const designref = useRef();
+  // const [newName,setNewName] = useState("BIWEKDUSADH");
 
+  const designref = useRef();
+  // const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  // const name = "BIWEKDUSADH";
+  // console.log(name.length);
+
+  
+  
+    // const hack= ()=>{
+    //   let iteration = 0;
+
+    //   const interval = setInterval(()=>{
+    //     let morphed = newName.split("").map((letter,index) =>{
+    //       if(index < iteration){
+    //         return name[index];
+    //       }
+    //       return letters[Math.floor(Math.random()*26)]
+    //     }).join("");
+
+    //     setNewName(morphed);
+    //     console.log(morphed);
+    //     if(iteration >= name.length) clearInterval(interval);
+    //     iteration += 1/3;
+    //     // console.log(iteration);
+    //   },30)
+    // }
+  
   useEffect(()=>{
     designref.current.setSpeed(1.1);
   })
@@ -47,12 +73,15 @@ const Home = () => {
                       transition={{duration:0.7, delay:0.25}}
                       style={{overflow:"hidden"}}
                 >
-                  Biwek Dusadh
+                 <h1 className='nameText'
+                      // onMouseOver={hack}
+                 >
+                 BIWEK DUSADH
+                  </h1> 
                 <Unravel>
                 </Unravel>
 
                 </m.span>
-              
             </div>
         </div>
         {/* <div className="line-2"></div> */}

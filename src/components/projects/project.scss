@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .project{
     position: relative;
     background-color: white;
@@ -5,36 +7,78 @@
     justify-content: center;
     flex-direction: column;
     gap: 1rem;
-    // transition: all 1s ease;
-    div{
+    transition: all 1s ease-in;
+    .work{
         position: relative;
         display: flex;
-        border-bottom: 1px solid whitesmoke;
+        justify-content:space-between ;
+        align-items: center;
+        border-bottom: 2px solid rgb(190, 188, 188);
         align-items: center;
         height: 30%;
+        left: 3rem;
+        width: 80%;
         // background-color: crimson;
         span{
-            position: relative;
-            // left: 3rem;
+            cursor: pointer;
             display: flex;
             font-family: 'Poppins',sans-serif;
+            
+            color: white;
             color: rgb(190, 188, 188);
-            // color: white;
-            font-size: 100px;
+            font-size: 5rem;
+            font-weight: 500;
         }
+
+        // .work{
+        //     position: relative;
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+            
+        // }
     }
     .info{
         display: flex;
+        justify-content: center;
+        // align-items: center;
+        flex-direction: column;
         position: absolute;
-        top: 0;
-        left: 25%;
+        gap: 2rem;
+        left: 40%;
         width: 50%;
         height: 60%;
-        display: none;
-        background-color: pink;
+        // z-index: 10;
+        background-color: yellow;
+        opacity: 0.8;
+        // border-radius: 5%;
+        color: rgb(190, 188, 188);
+        color: crimson;
+        span{
+            position: relative;
+            left: 1rem;
+            font-family: 'Poppins',sans-serif;
+            font-size: 50px;
+            // background-color: black;
+            color: black;
+        }
+        // .circle{
+        //     border-radius: 3px;
+        //     width: 150px;
+        //     height: 150px;
+        //     background: black;
+        //     position: absolute;
+        //     right: 0px;
+        //     top: 0;
+        //     background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+        //     background-color: aliceblue;
+        //     border-bottom-left-radius: 200px;
+
+        // }
     }
 }
 .active{
     // background-color: #10100f;
+    // background-color: rgb(34, 27, 27);
     background-color: black;
 }

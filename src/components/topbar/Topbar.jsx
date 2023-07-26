@@ -10,14 +10,14 @@ export default function Topbar({open,set,className,topBar}) {
 
         <div className="left">
           <a href="#intro" className='logo' >biwek.</a>
-            <div className="itemContainer">
+            {/* <div className="itemContainer">
               <Person className="icon"/>
               <span>+91 8638720449 </span>
             </div>  
           <div className="itemContainer">  
             <Mail className="icon"/>
             <span>biwekdusadh8@gmail.com</span>
-          </div> 
+          </div>  */}
         </div>
 
         <div className="right">

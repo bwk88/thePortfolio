@@ -50,7 +50,7 @@ export default function Portfolio() {
               </div>
               <Reveal>
                 <div className="tags">
-                  {/* <p>My Links &#8594;</p> */}
+                  {/* <p>My Links &#8594;</p>
                   <a href="http://#">
                     <img src="assets/linkedin.png" alt="" />
                   </a>
@@ -62,7 +62,7 @@ export default function Portfolio() {
                   </a>
                   <a href="http://#">
                     <img src="assets/instagram.png" alt="" />
-                  </a>
+                  </a> */}
                 </div>
               </Reveal>
           </div>
