@@ -8,7 +8,7 @@
     position: fixed;
     top: 0;
     z-index: 3;
-    transition:all 1s ease-in;
+    transition:all .9s ease-in;
 
     .wrapper{
         padding: 10px 30px;
@@ -86,22 +86,14 @@
         }
     }
     &.switch{
-        background-color: black;
+        background-color: rgb(26,26,26);
         color: white;
-        // .hamburger{
-        //     span{
-        //         &:first-child{
-        //             background-color: white;
-        //             transform: rotate(45deg);
-        //         }
-        //         &:nth-child(2){
-        //             opacity: 0;
-        //         }
-        //         &:last-child{
-        //             background-color: white;
-        //             transform: rotate(-45deg);
-        //         }
-        //     }
-        // }
+        .right{
+            .hamburger{
+                span{
+                    background-color: white;
+                }
+            }
+        }
     }
 }

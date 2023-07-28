@@ -3,11 +3,12 @@ import { useState,useRef, useEffect } from "react";
 import Topbar from "./components/topbar/Topbar";
 import Contact from "./components/contact/Contact";
 import Portfolio from "./components/portfolio/Portfolio";
-// import Works from "./components/works/Works";
 import Home from "./components/home/Home";
 import Menu from "./components/menu/Menu";
 import Project from "./components/projects/Project";
 import "./app.scss";
+
+// import AnimatedCursor from 'react-animated-cursor'
 
 function App() {
   const [menuOpen,setMenuOpen] = useState(false);
@@ -15,8 +16,7 @@ function App() {
 
   return (
     <div className="app">
-        {/* <AnimatedCursor
-        color="#fff"
+        {/* <AnimatedCursor color="#fff"
         innerSize={8}
         outerSize={35}
         innerScale={1}
@@ -30,8 +30,8 @@ function App() {
         // border: '2px solid var(--cursor-color)',
         mixBlendMode: 'exclusion',
         backgroundColor: '#fff'
-        }} */}
-        {/* /> */}
+        }}/> */}
+
         <Topbar open = {menuOpen} 
         set = {setMenuOpen} 
         topBar={topBar}

@@ -4,6 +4,7 @@ import { motion as m, useAnimation, useInView} from 'framer-motion'
 const Reveal = ({children,width = "fit-content"}) => {
   const ref= useRef(null);
   const isInView = useInView(ref,{once: true});
+  // console.log(isInView)
 
   const mainControls = useAnimation();
   const slideControls = useAnimation();

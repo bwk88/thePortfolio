@@ -89,6 +89,7 @@ export default function Portfolio() {
                   <span>Django</span>
                   <span>HTML</span>
                   <span>CSS</span>
+                  <span>Data Structure & Algo.</span>
                 </div>
               </Reveal>
             </div>
@@ -104,7 +105,7 @@ export default function Portfolio() {
                 <Reveal>
                   <div className="techContainer">
                   <span>Deputy Engineer, BEL , Ghaziabad</span>
-                  <span>Intern at Samsung R&D Bangalore</span>
+                  <span className='magic'>Intern at Samsung R&D Bangalore</span>
                   <span>Teaching Staff , NIT Silchar</span>
                   {/* <span>Typecript</span> */}
                 </div>

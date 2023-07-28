@@ -3,7 +3,6 @@
 .menu{
     width: 250px;
     height: 100vh;
-    background-color: $mainColor;
     position: fixed;
     top: 0;
     right: -500px;
@@ -13,8 +12,9 @@
     align-items: center;
     justify-content: center;
     transition: all 1s ease;
-
+    
     &.active {
+        background-color: $mainColor;
         right: 0;
     }
 
@@ -30,6 +30,7 @@
         li{
             margin-bottom: 25px;
             a{
+                background-color: black;
                 font-size: inherit;
                 color: inherit;
                 text-decoration: none;

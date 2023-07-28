@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './project.scss'
 import { useInView } from 'react-intersection-observer'
+import { animate, useInView as theView, useAnimation } from 'framer-motion';
 import { motion as m } from 'framer-motion';
 import { GitHub } from '@mui/icons-material';
+
 
 function useMouse(){
     const [mousePosition, setMousePosition] = useState({
@@ -26,14 +28,18 @@ function useMouse(){
 
 const Project = ({topBar,setTopBar ,className}) => {
     const [ref,isInView] = useInView();
-    const [infoRef,isInInfo] = useInView();
+    const myref = useRef(null);
     const [info,setInfo] = useState(false);
+    const isView = theView(myref,{once: false});
+
+    const mainControls = useAnimation();
+    // const [infoRef,isInInfo] = useInView();
     // const [ypixel,setYpixel] = useState(false);
 
-    var {x,y} = useMouse();
-    if(isInInfo){
-        console.log("true")
-    }
+    // var {x,y} = useMouse();
+    // if(isInInfo){
+    //     console.log("true")
+    // }
     // var viewportOffset = document.getBoundingClientRect();
     // console.log(window.getBoundingClientRect())
 
@@ -56,69 +62,105 @@ const Project = ({topBar,setTopBar ,className}) => {
         }
     }
 
+    const hoverDot = () =>{
+        return{
+            opacity:0.5
+        }
+    }
+
     useEffect(()=>{
         if(isInView){
             setTopBar(false);
         }else{
             setTopBar(true);
         }
-    })
+    },[isInView])
   return (
     
     <div  className= {"project " + (isInView && "active")}>
-        <div ref = {ref} className="work">
-            <m.span
-                onMouseEnter={handle}
-                onMouseLeave={handle}
-                whileHover={hover()}
-            >
-                GYM-APP
-            </m.span>
+            <m.div            
+            ref = {ref} 
+            className="work"
+            initial={{opacity:0, y:75}}
+            animate={isInView && {opacity:1, y:0}}
+            transition={{duration:0.5, delay:1.2}}
+            > 
+                <m.div className="container"onMouseEnter={handle} onMouseLeave={handle} whileHover={hover()}>
+                <span >GYM-APP</span>
+                    
+                <span className='tech'>
+                    React | Material UI
+                </span>
+                </m.div>
+
+                <a href="#b"><GitHub className='icon' style={{color:'white'}} /></a>
+            </m.div>
+
+        
+        
+        
+        
+        <m.div 
+        className="work"
+        initial={{opacity:0, y:75}}
+        animate={isInView && {opacity:1, y:0}}
+        transition={{duration:0.5, delay:1.25}}
+        >
+        <m.div className="container"
+        onMouseEnter={handle}
+        onMouseLeave={handle} 
+        whileHover={hover()}
+        >
+            <span >CAM OBJECT DETECT</span>
+                
+            <span className='tech'>
+                Python | OpenCV
+            </span>
+            </m.div>
             <a href="#b">
                 <GitHub className='icon' style={{color:'white'}} />
             </a>
-        </div>
-        <div className="work">
-            <m.span
-                onMouseEnter={handle}
-                onMouseLeave={handle}
-                whileHover={hover()}
-            >
-            COVID DATA
-            </m.span>
+        </m.div>
+
+
+
+
+        <m.div className="work" id='dfu-border'
+
+        style={{borderBottom:'none'}}
+
+        initial={{opacity:0, y:75}}
+        animate={isInView && {opacity:1, y:0}}
+        transition={{duration:0.5, delay:1.5}}
+        >
+        <m.div className="container" onMouseEnter={handle} onMouseLeave={handle} whileHover={hover()}>
+            <span >DFU APP</span>
+                
+            <span className='tech'>
+                FastPI | React Native | Deep Learning | Medical 
+            </span>
+            </m.div>
             <a href="#b">
                 <GitHub className='icon' style={{color:'white'}} />
             </a>
-        </div>
-        <div className="work">
-            <m.span
-                onMouseEnter={handle}
-                onMouseLeave={handle}
-                whileHover={hover()}
-            >
-            DFU DETECTION 
-            </m.span>
-            <a href="#b">
-                <GitHub className='icon' style={{color:'white'}} />
-            </a>
-        </div>
+        </m.div>
 
         <m.div
-        ref={infoRef}
-        style={{
-        display:!info ? "none" : " ",
-        left: `${x+300}px` 
-         , top:`${y-80}px`}} 
-        className="info">
-            {/* <span>A gym React app that gives functionality to choose exercise catagories and specific muscle group.User Interface is build
-            using Material UI.</span>
+        // whileHover={hoverDot()}
+        
+        className="dots"
+        >
 
-            <span>More than 1000 exercises can be browsed with practical example(GIF and youtube videos).</span>
 
-            <span>For each exercise simillar exercises are recomended and You Tube videos that are fetched using API are shown</span> */}
-
-            <div className="circle"></div>
         </m.div>
+
+        
+        {/* <m.div ref={infoRef}
+                style={{ display:!info ? "none" : " ",left: `${x+300}px` , top:`${y-80}px`}} 
+                className="info">
+            <img src="assets/website-1.jpg" alt="" />
+        </m.div> */}
+
     </div>
   )
 }
