@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './project.scss'
 import { useInView } from 'react-intersection-observer'
-import { animate, useInView as theView, useAnimation } from 'framer-motion';
 import { motion as m } from 'framer-motion';
 import { GitHub } from '@mui/icons-material';
 
@@ -28,11 +27,7 @@ function useMouse(){
 
 const Project = ({topBar,setTopBar ,className}) => {
     const [ref,isInView] = useInView();
-    const myref = useRef(null);
     const [info,setInfo] = useState(false);
-    const isView = theView(myref,{once: false});
-
-    const mainControls = useAnimation();
     // const [infoRef,isInInfo] = useInView();
     // const [ypixel,setYpixel] = useState(false);
 
@@ -57,7 +52,9 @@ const Project = ({topBar,setTopBar ,className}) => {
     const hover = () =>{
         return{
             x:50,
-            opacity:0.4,
+            // scale:1.2,
+
+            // opacity:0.4,
             transition:{duration:0.5},
         }
     }
@@ -80,7 +77,7 @@ const Project = ({topBar,setTopBar ,className}) => {
     <div  className= {"project " + (isInView && "active")}>
             <m.div            
             ref = {ref} 
-            className="work"
+            className="work work-1"
             initial={{opacity:0, y:75}}
             animate={isInView && {opacity:1, y:0}}
             transition={{duration:0.5, delay:1.2}}
@@ -88,12 +85,12 @@ const Project = ({topBar,setTopBar ,className}) => {
                 <m.div className="container"onMouseEnter={handle} onMouseLeave={handle} whileHover={hover()}>
                 <span >GYM-APP</span>
                     
-                <span className='tech'>
-                    React | Material UI
-                </span>
+                    <span className='tech'>
+                        React | Material UI
+                    </span>
                 </m.div>
 
-                <a href="#b"><GitHub className='icon' style={{color:'white'}} /></a>
+                <a href="#b"><GitHub className='icon'  /></a>
             </m.div>
 
         
@@ -118,7 +115,7 @@ const Project = ({topBar,setTopBar ,className}) => {
             </span>
             </m.div>
             <a href="#b">
-                <GitHub className='icon' style={{color:'white'}} />
+                <GitHub className='icon'  />
             </a>
         </m.div>
 
@@ -139,21 +136,20 @@ const Project = ({topBar,setTopBar ,className}) => {
             <span className='tech'>
                 FastPI | React Native | Deep Learning | Medical 
             </span>
-            </m.div>
-            <a href="#b">
-                <GitHub className='icon' style={{color:'white'}} />
-            </a>
+        </m.div>
+        <a href="#b">
+            <GitHub className='icon'  />
+        </a>
         </m.div>
 
-        <m.div
-        // whileHover={hoverDot()}
-        
+        {/* <m.div
+
         className="dots"
         >
 
 
-        </m.div>
-
+        </m.div> */}
+        
         
         {/* <m.div ref={infoRef}
                 style={{ display:!info ? "none" : " ",left: `${x+300}px` , top:`${y-80}px`}} 
