@@ -3,9 +3,10 @@ import { useState,useRef, useEffect } from "react";
 import Topbar from "./components/topbar/Topbar";
 import Contact from "./components/contact/Contact";
 import Portfolio from "./components/portfolio/Portfolio";
-import Home from "./components/home/Home";
+// import Home from "./components/home/Home";
 import Menu from "./components/menu/Menu";
 import Project from "./components/projects/Project";
+import Intro from "./components/intro/Intro"
 import "./app.scss";
 
 // import AnimatedCursor from 'react-animated-cursor'
@@ -40,8 +41,8 @@ function App() {
         />
         <Menu open = {menuOpen} set = {setMenuOpen}/>
       <div className="sections">
-        {/* <Intro/> */}
-        <Home />
+        <Intro/>
+        {/* <Home /> */}
         <Portfolio/>
         {/* <Works className='workPage' topBar={topBar} setTopBar={setTopBar} /> */}
         <Project topBar={topBar} setTopBar={setTopBar} />

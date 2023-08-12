@@ -80,7 +80,7 @@ const Project = ({topBar,setTopBar ,className}) => {
             className="work work-1"
             initial={{opacity:0, y:75}}
             animate={isInView && {opacity:1, y:0}}
-            transition={{duration:0.5, delay:1.2}}
+            transition={{duration:0.5, delay:0.8}}
             > 
                 <m.div className="container"onMouseEnter={handle} onMouseLeave={handle} whileHover={hover()}>
                 <span >GYM-APP</span>
@@ -101,7 +101,7 @@ const Project = ({topBar,setTopBar ,className}) => {
         className="work"
         initial={{opacity:0, y:75}}
         animate={isInView && {opacity:1, y:0}}
-        transition={{duration:0.5, delay:1.25}}
+        transition={{duration:0.5, delay:0.8}}
         >
         <m.div className="container"
         onMouseEnter={handle}
@@ -128,7 +128,7 @@ const Project = ({topBar,setTopBar ,className}) => {
 
         initial={{opacity:0, y:75}}
         animate={isInView && {opacity:1, y:0}}
-        transition={{duration:0.5, delay:1.5}}
+        transition={{duration:0.5, delay:1.0}}
         >
         <m.div className="container" onMouseEnter={handle} onMouseLeave={handle} whileHover={hover()}>
             <span >DFU APP</span>

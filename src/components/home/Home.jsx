@@ -43,6 +43,7 @@ const Home = () => {
   })
   return (
     <div className="intro">
+      <div className="line-1"></div>
         <div className="container">
             <div className="lottie">
               <Lottie onClick={()=>{
@@ -60,31 +61,35 @@ const Home = () => {
               }}
               // interactivity={interactivity}
               lottieRef={designref}
-              style={{height:'700px', width:'700px',overflow:'hidden'}}
-              animationData={currAnimation}/>
-                <m.span
-                      className='heroText'
-                      variants={{
-                        hidden: {opacity:0, y:75},
-                        visible:{opacity:1, y:0}
-                      }}
-                      initial="hidden"
-                      animate= "visible"
-                      transition={{duration:0.7, delay:0.25}}
-                      style={{overflow:"hidden"}}
-                >
-                 <h1 className='nameText'
-                      // onMouseOver={hack}
-                 >
-                 BIWEK DUSADH
-                  </h1> 
-                <Unravel>
-                </Unravel>
-
-                </m.span>
+              style={{height:'700px', width:'700px',overflow:'hidden',zIndex:''}}
+              animationData={currAnimation}
+              />
+                <h1 className='nameText'>
+              Developer.Frontend
+              </h1> 
             </div>
+
+            <m.span 
+                  className='heroText'
+                  variants={{
+                    hidden: {opacity:0, y:75},
+                    visible:{opacity:1, y:0}
+                  }}
+                  initial="hidden"
+                  animate= "visible"
+                  transition={{duration:0.7, delay:0.25}}
+                  style={{overflow:"hidden"}}>
+
+              <h1 className='nameText'>
+              {/* Developer.Frontend */}
+              </h1> 
+
+            <Unravel>
+            </Unravel>
+
+            </m.span>
         </div>
-        {/* <div className="line-2"></div> */}
+        <div className="line-2"></div>
     </div>
   )
 }
