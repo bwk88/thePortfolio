@@ -6,10 +6,7 @@ import { GitHub } from '@mui/icons-material';
 
 
 function useMouse(){
-    const [mousePosition, setMousePosition] = useState({
-        x : null,
-        y : null
-    })
+    const [mousePosition, setMousePosition] = useState({x : null, y : null })
 
     useEffect(()=>{
         function handle(e){
@@ -93,10 +90,6 @@ const Project = ({topBar,setTopBar ,className}) => {
                 <a href="#b"><GitHub className='icon'  /></a>
             </m.div>
 
-        
-        
-        
-        
         <m.div 
         className="work"
         initial={{opacity:0, y:75}}

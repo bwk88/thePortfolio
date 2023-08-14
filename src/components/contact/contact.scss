@@ -15,12 +15,18 @@
         gap: 1.5rem;
         color: $mainColor;
         font-family: 'Poppins', sans-serif;
+        @include mobile{
+            justify-content: center;
+            // align-items: center;
+            width: 80%;
+        }
 
         .heroContact{
             display: flex;
             align-items: center;
             justify-content: center;
             width: 100%;
+
             
             span{
                 font-size: 96px;

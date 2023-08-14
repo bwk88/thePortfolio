@@ -5,15 +5,67 @@
     color: $mainColor;
     display: flex;
     overflow-y: hidden;
+    .line-icon{
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        position: relative;
+        left: 1%;
+        @include mobile{
+            display: none;
+        }
+        .line1{
+            // position: relative;
+            height: 80%;
+            width: 2px;
+            // width: 50%;
+            background-color: $mainColor;
+            // opacity: 0.6;
+        }
+        img{
+            width: 30px;
+        }
+    }
+
+    .line2{
+        position: relative;
+        top: 75%;
+        right: 2%;
+        height: 20%;
+        width: 1px;
+        // opacity: 0.6;
+        // width: 50%;
+        background-color: $mainColor;
+        @include mobile{
+            display: none;
+        }
+    }
+    
+    @include mobile{
+        // display: none;
+        // display: block;
+        // display: inline;
+        flex-direction: column;
+        // align-items: center;
+    }
 
     .left{
+        // border: 1px solid black;
         position: relative;
         flex:0.5;
         overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        .lottie{
-            position: relative;
-            left: 7%;
+        @include mobile{
+            flex: 3;
+            // height: 100%;
+            // position: relative;
+            // top: 50%;
+
         }
 
         // .imgContainer{
@@ -39,6 +91,11 @@
         // background-color: pink;
         flex:0.5;
         position: relative;
+        @include mobile{
+
+            position: relative;
+            bottom: 50%;
+        }
 
         .wrapper{
             // background-color: pink;
@@ -48,29 +105,48 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            @include mobile{
+                position: relative;
+                // bottom: 80%;
+                align-items: center;
+            }
             
             span{
                 display: inline-block;
             }
-
+            
             h1{
                 // font-family: 'Poppins',sans-serif;
                 // letter-spacing: 5px;
                 font-size: 80px;
+                font-weight: 500;
                 // background-color: crimson;
-                // margin: 10px 0;
+                @include mobile{
+                    font-weight: 500;
+                    // margin: 10px 0;
+                    font-size: 50px;
+                }
             }
             h2{
                 // color: crimson;
                 position: relative;
                 left: 2px;
+                font-weight: 300;
                 font-size: 30px;
+                @include mobile{
+
+                    font-size: 30px;
+                }
             }
             h3{
                 position: relative;
                 left: 2px;
                 font-size: 30px;
                 display: flex;
+                @include mobile{
+                    font-size: 20px;
+                }
                 .op{
                     opacity:0;
                 }
@@ -85,6 +161,12 @@
             position: absolute;
             bottom: 10px;
             left: 40%;
+
+            @include mobile{
+                display: none;
+                // bottom: 100px;
+                // z-index: 3;
+            }
 
             img{
                 width: 30px;

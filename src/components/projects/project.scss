@@ -20,6 +20,10 @@
         height: 23%;
         left: 3rem;
         width: 70%;
+
+        @include mobile{
+            width: 90%;
+        }
         .icon{
             color: rgb(238,238,238);
         }
@@ -39,6 +43,10 @@
                 color: rgb(238,238,238);
                 font-size: 4rem;
                 font-weight: 300;
+
+                @include mobile{
+                    font-size: 2rem;
+                }
             }
             .tech{
                 position: relative;

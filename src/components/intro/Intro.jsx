@@ -24,7 +24,12 @@ export default function Intro() {
   const name = "Biwek Dusadh".split("");
   return (
     <div className="intro" id = "intro">
-
+      <div className="line-icon">
+        <div className="line1"></div>
+        <img src="assets/linkedin.png" alt="" />
+        {/* <img src="assets/instagram.png" alt="" /> */}
+      </div>
+      
       <div className="left">
 
           <Lottie onClick={()=>{
@@ -43,7 +48,7 @@ export default function Intro() {
           // interactivity={interactivity}
           lottieRef={designref}
           className='lottie'
-          style={{height:'700px', width:'700px',overflow:'hidden',zIndex:''}}
+          style={{height:'1000px', width:'1000px',overflow:'hidden',zIndex:''}}
           animationData={currAnimation}
           />
         
@@ -73,11 +78,11 @@ export default function Intro() {
           </Reveal>
         </div>
 
-        <a href="#portfolio">
+        <a href="#portfolio" className='arrow'>
           <img src="assets/down.png" alt="" />
         </a>
       </div>
-      
+      <div className="line2"></div>
     </div>
   )
 }
