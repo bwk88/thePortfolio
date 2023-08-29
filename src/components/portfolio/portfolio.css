@@ -13,7 +13,6 @@
 }
 
 .portfolio .container {
-  border: 1px solid black;
   height: 95%;
   width: 60%;
   display: -webkit-box;
@@ -24,6 +23,13 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
+}
+
+@media (max-width: 768px) {
+  .portfolio .container {
+    height: 99%;
+    width: 90%;
+  }
 }
 
 .portfolio .container .top {
@@ -43,11 +49,29 @@
 }
 
 .portfolio .container .top h3 {
-  font-size: 56px;
-  color: black;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 49px;
+  font-weight: 500;
+  color: #15023a;
+}
+
+@media (max-width: 768px) {
+  .portfolio .container .top h3 {
+    font-size: 39px;
+  }
+}
+
+.portfolio .container .top h3 span {
+  color: crimson;
 }
 
 .portfolio .container .top .line {
@@ -65,6 +89,17 @@
   -webkit-box-flex: 12;
       -ms-flex: 12;
           flex: 12;
+  gap: 3rem;
+}
+
+@media (max-width: 768px) {
+  .portfolio .container .about {
+    gap: 0.1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .portfolio .container .about .aboutContainer {
@@ -84,21 +119,61 @@
 }
 
 .portfolio .container .about .aboutContainer .dec {
+  letter-spacing: 1.1px;
+  line-height: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
   -webkit-box-flex: 14;
       -ms-flex: 14;
           flex: 14;
+}
+
+@media (max-width: 768px) {
+  .portfolio .container .about .aboutContainer .dec {
+    letter-spacing: 0px;
+    line-height: 1.5rem;
+  }
+}
+
+.portfolio .container .about .aboutContainer .dec p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14.5px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .portfolio .container .about .aboutContainer .dec p {
+    font-size: 12px;
+  }
+}
+
+.portfolio .container .about .aboutContainer .dec .firstPara::first-letter {
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 1;
+  color: white;
+  padding: 0.6rem 0.5rem;
+  background: crimson;
+  margin-right: 0.5rem;
+  float: left;
 }
 
 .portfolio .container .about .aboutContainer .tags {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-weight: 500;
   gap: 1rem;
   -webkit-box-flex: 2;
@@ -107,7 +182,7 @@
 }
 
 .portfolio .container .about .aboutContainer .tags img {
-  width: 24px;
+  width: 22px;
 }
 
 .portfolio .container .about .skills {
@@ -126,6 +201,14 @@
           flex-direction: column;
 }
 
+@media (max-width: 768px) {
+  .portfolio .container .about .skills {
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+  }
+}
+
 .portfolio .container .about .skills .techStack {
   -webkit-box-flex: 5;
       -ms-flex: 5;
@@ -137,23 +220,36 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: .5rem;
+  gap: 1rem;
 }
 
 .portfolio .container .about .skills .techStack h4 {
+  color: #15023a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: .5rem;
+  gap: 1rem;
 }
 
 .portfolio .container .about .skills .techStack h4 img {
   width: 25px;
 }
 
+@media (max-width: 768px) {
+  .portfolio .container .about .skills .techStack h4 img {
+    width: 15px;
+  }
+}
+
 .portfolio .container .about .skills .techStack h4 span {
-  font-size: 22px;
-  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .portfolio .container .about .skills .techStack h4 span {
+    font-size: 15px;
+  }
 }
 
 .portfolio .container .about .skills .techStack .techContainer {
@@ -166,19 +262,39 @@
 }
 
 .portfolio .container .about .skills .techStack .techContainer span {
+  font-family: 'Poppins', sans-serif;
   margin: 2px;
-  padding: 7px;
-  border: 1px solid black;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid #15023a;
   border-radius: 5px;
 }
 
+@media (max-width: 768px) {
+  .portfolio .container .about .skills .techStack .techContainer span {
+    font-size: 10px;
+  }
+}
+
+.portfolio .container .about .skills .techStack .techContainer .magic {
+  background: -webkit-gradient(linear, left top, right top, from(var(black)), to(var(black)));
+  background: linear-gradient(to right, var(black), var(black));
+}
+
 .portfolio .container .about .skills .exp {
-  -webkit-box-flex: 5;
-      -ms-flex: 5;
-          flex: 5;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
 }
 
 .portfolio .container .about .skills .exp .techStack img {
   width: 22px;
+}
+
+@media (max-width: 768px) {
+  .portfolio .container .about .skills .exp .techStack img {
+    width: 15px;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */

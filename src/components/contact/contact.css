@@ -24,6 +24,16 @@
   width: 40%;
   gap: 1.5rem;
   color: #15023a;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .contact .wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+  }
 }
 
 .contact .wrapper .heroContact {
@@ -41,14 +51,16 @@
 
 .contact .wrapper .heroContact span {
   font-size: 96px;
-  font-weight: 700;
+  font-weight: 900;
 }
 
-.contact .wrapper .heroContact span span {
+.contact .wrapper .heroContact span .dot {
   color: crimson;
 }
 
 .contact .wrapper .contactDesc {
+  font-size: 20px;
+  font-weight: 300;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,7 +74,8 @@
 }
 
 .contact .wrapper .mail {
-  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,6 +83,10 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  font-weight: 600;
+  font-weight: 500;
+}
+
+.contact .wrapper .mail a {
+  color: #15023a;
 }
 /*# sourceMappingURL=contact.css.map */

@@ -10,7 +10,7 @@
         flex-direction: column;
         // justify-content: center;
         align-items: center;
-        gap: 4rem;
+        gap: 2rem;
         position: relative;
         left: 1%;
         @include mobile{
@@ -25,7 +25,7 @@
             // opacity: 0.6;
         }
         img{
-            width: 30px;
+            width: 40px;
         }
     }
 
@@ -44,10 +44,8 @@
     }
     
     @include mobile{
-        // display: none;
-        // display: block;
-        // display: inline;
         flex-direction: column;
+        justify-content: center;
         // align-items: center;
     }
 
@@ -61,40 +59,25 @@
         align-items: center;
 
         @include mobile{
-            flex: 3;
-            // height: 100%;
-            // position: relative;
-            // top: 50%;
-
+            // flex: 3;
+            flex: none;
+            position: relative;
+            top: 10%;
         }
-
-        // .imgContainer{
-        //     width: 700px;
-        //     height: 700px;
-        //     // background-color: rgb(220, 20, 60);
-        //     background-color: $mainColor;
-        //     display: flex;
-        //     border-radius: 50%;
-        //     align-items: flex-end;
-        //     justify-content: center;
-        //     float: right;
-        // }
-        // img{
-        //    left: 20%; 
-        //    top:10%; 
-        //    position: absolute;
-        //     height: 90%;
-        // }
     }
 
     .right{
-        // background-color: pink;
         flex:0.5;
         position: relative;
-        @include mobile{
 
+        @include mobile{
+            // flex: 1;
+            flex: none;
             position: relative;
-            bottom: 50%;
+            // bottom: 50%;
+            // border: 1px solid black;
+            position: relative;
+            bottom: 80%;
         }
 
         .wrapper{
@@ -135,7 +118,7 @@
                 font-weight: 300;
                 font-size: 30px;
                 @include mobile{
-
+                    // bottom: 10px;
                     font-size: 30px;
                 }
             }
@@ -169,7 +152,8 @@
             }
 
             img{
-                width: 30px;
+                width: 40px;
+                
                 animation: arrowBlink 2s infinite;
             }
 

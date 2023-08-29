@@ -12,6 +12,7 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "animejs": "^3.2.1",
+    "caniuse-lite": "^1.0.30001524",
     "framer-motion": "^10.12.21",
     "ityped": "^1.0.3",
     "lottie-react": "^2.4.0",

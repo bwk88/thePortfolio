@@ -6,8 +6,8 @@
   position: fixed;
   top: 0;
   z-index: 3;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all .9s ease-in;
+  transition: all .9s ease-in;
 }
 
 .topbar .wrapper {
@@ -106,5 +106,14 @@
   background-color: white;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.topbar.switch {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.topbar.switch .right .hamburger span {
+  background-color: white;
 }
 /*# sourceMappingURL=topbar.css.map */

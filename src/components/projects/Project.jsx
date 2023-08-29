@@ -80,7 +80,9 @@ const Project = ({topBar,setTopBar ,className}) => {
             transition={{duration:0.5, delay:0.8}}
             > 
                 <m.div className="container"onMouseEnter={handle} onMouseLeave={handle} whileHover={hover()}>
+                <a href="https://alpha-gym.netlify.app/" rel='nonferrer' target='_blank' style={{textDecoration:'none'}}>
                 <span >GYM-APP</span>
+                </a>
                     
                     <span className='tech'>
                         React | Material UI
@@ -101,6 +103,7 @@ const Project = ({topBar,setTopBar ,className}) => {
         onMouseLeave={handle} 
         whileHover={hover()}
         >
+            
             <span >CAM OBJECT DETECT</span>
                 
             <span className='tech'>
@@ -124,7 +127,9 @@ const Project = ({topBar,setTopBar ,className}) => {
         transition={{duration:0.5, delay:1.0}}
         >
         <m.div className="container" onMouseEnter={handle} onMouseLeave={handle} whileHover={hover()}>
-            <span >DFU APP</span>
+            <a href="https://github.com/bwk88/footUlcer_NativeAPP" rel='nonferrer' target='_blank' style={{textDecoration:'none'}}>
+                <span >DFU APP</span>
+            </a>
                 
             <span className='tech'>
                 FastPI | React Native | Deep Learning | Medical 

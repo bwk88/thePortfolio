@@ -1,0 +1,105 @@
+.intro {
+  position: relative;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro .container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 95%;
+  width: 95%;
+  overflow: hidden;
+}
+
+.intro .container .lottie {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro .container .lottie .nameText {
+  position: relative;
+  right: 17rem;
+  z-index: 3;
+  color: #15023a;
+  font-family: 'Poppins',sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.intro .container span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  position: relative;
+  right: 3rem;
+}
+
+.intro .container span .nameText {
+  position: relative;
+  right: 2rem;
+  z-index: 3;
+  color: #15023a;
+  font-family: 'Poppins',sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.intro .container span h1 {
+  font-family: 'Poppins',sans-serif;
+  color: crimson;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.intro .line-1 {
+  position: relative;
+  left: 1%;
+  bottom: 5%;
+  background-color: black;
+  height: 80%;
+  width: 2px;
+  opacity: 0.5;
+}
+
+.intro .line-2 {
+  position: relative;
+  top: 30%;
+  background-color: black;
+  height: 30%;
+  width: 2px;
+  opacity: 0.5;
+}
+/*# sourceMappingURL=home.css.map */

@@ -22,30 +22,27 @@ export default function Portfolio() {
             <div className="dec">
               <Reveal>
                 <p className='firstPara'>Hey! I'm Biwek, if you haven't already gathered that by now. 
-                 I love building visually appealling frontend products and design. Worked on a Machine learning model and integrating it into a mobile app for my Final Year Project. </p>
+                 I love building visually appealling frontend products and design. Recently worked on a Deep Learning learning model to detect Diabetic Foot Ulcer and integrated it into a mobile app for my Final Year Project. </p>
               </Reveal>
               <Reveal>
-                  <p>
-                Presently, working as a Member Research Staff at Bharat Electronics Limited, Ghaziabad ,India.
-                
-                </p>
+                  {/* <p>Presently, working as a Member Research Staff at Bharat Electronics Limited, Ghaziabad ,India.</p> */}
+                  <p>During my Masters I did my Internship at Samsung Research Intitute , Bangalore where i worked with its tech strategy team into developing an inhouse Data Managment Platform</p>
 
               </Reveal>
                <Reveal>
                 <p>
-                Beyond coding and development i have a passion for playing music.
-                I find solace and joy in creating soulful tunes, striking a harmonious balance between the analytical world of coding and the expressive realm of music
+                Beyond coding and development i like playing music and recording tracks.
                 </p>
 
                </Reveal>
 
-                <Reveal>
+                {/* <Reveal>
                 <p>
                 A true sports lover, [Your Name] also holds a special place in [his/her] heart for football.
                 As an avid football fan, [he/she] enjoys cheering for favorite teams, engaging in discussions about the beautiful game, and embracing the camaraderie of the sports community.
                 </p>  
 
-                </Reveal>
+                </Reveal> */}
                 
               </div>
               <Reveal>

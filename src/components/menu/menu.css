@@ -1,7 +1,6 @@
 .menu {
   width: 250px;
   height: 100vh;
-  background-color: #15023a;
   position: fixed;
   top: 0;
   right: -500px;
@@ -24,6 +23,7 @@
 }
 
 .menu.active {
+  background-color: #15023a;
   right: 0;
 }
 

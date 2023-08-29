@@ -18,6 +18,7 @@
         position: absolute;
 
         @include mobile{
+            height: 99%;
             width: 90%;
         }
 
@@ -37,6 +38,10 @@
                 font-size: 49px;
                 font-weight: 500;
                 color: $mainColor;
+
+                @include mobile{
+                    font-size: 39px;
+                }
 
                 span{
                     color: crimson;
@@ -59,7 +64,7 @@
             flex: 12;
             gap: 3rem;
             @include mobile{
-                gap: 1rem;
+                gap: 0.1rem;
                 flex-direction: column;
             }
             .aboutContainer{
@@ -79,6 +84,10 @@
                     align-items: center;
                     // justify-content:space-around;
                     // flex-wrap: wrap;
+                    @include mobile{
+                        letter-spacing: 0px;
+                        line-height: 1.5rem;
+                    }
                     gap: 1rem;
                     flex: 14;
                     p{
@@ -86,6 +95,10 @@
                         font-size: 14.5px;
                         font-style: normal;
                         font-weight: 500;
+
+                        @include mobile{
+                            font-size: 12px;
+                        }
                     }
                     .firstPara::first-letter{
                         font-size: 2.3rem;
@@ -110,6 +123,7 @@
                     // align-items: center;
                     font-weight: 500;
                     gap: 1rem;
+
                     
                     img{
                         width: 22px;
@@ -126,6 +140,9 @@
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
+                @include mobile{
+                    flex: 5;
+                }
 
 
                 .techStack{
@@ -141,6 +158,9 @@
                         img{
                             width: 25px;
                             // color: red;
+                            @include mobile{
+                                width: 15px;
+                            }
                         }
                         
                         span{
@@ -148,6 +168,9 @@
                             // width: fit-content;
                             // font-size: 20px;
                             font-weight: 700;
+                            @include mobile{
+                                font-size: 15px;
+                            }
                         }
                     }
 
@@ -165,6 +188,10 @@
                             font-weight:500;
                             border: 1px solid $mainColor;
                             border-radius: 5px;
+
+                            @include mobile{
+                                font-size: 10px;
+                            }
                         }
                         
                         .magic{
@@ -190,6 +217,9 @@
                     .techStack{
                         img{
                             width: 22px;
+                            @include mobile{
+                                width: 15px;
+                            }
                         }
                     }
                 }

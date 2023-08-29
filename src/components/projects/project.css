@@ -1,0 +1,173 @@
+.project {
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.project .work {
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #eeeeee;
+  align-items: center;
+  height: 23%;
+  left: 3rem;
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+  .project .work {
+    width: 90%;
+  }
+}
+
+.project .work .icon {
+  color: #eeeeee;
+}
+
+.project .work .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.project .work .container span {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Poppins',sans-serif;
+  color: white;
+  color: #bebcbc;
+  color: #eeeeee;
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .project .work .container span {
+    font-size: 2rem;
+  }
+}
+
+.project .work .container .tech {
+  position: relative;
+  font-size: 1rem;
+  left: 1re;
+}
+
+.project .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  gap: 2rem;
+  width: 50%;
+  height: 50%;
+  opacity: 0.8;
+  color: #bebcbc;
+  color: crimson;
+}
+
+.project .info img {
+  width: 500px;
+  height: 500px;
+}
+
+.project .info span {
+  position: relative;
+  left: 1rem;
+  font-family: 'Poppins',sans-serif;
+  font-size: 50px;
+  color: black;
+}
+
+.project .dots {
+  overflow: hidden;
+  position: absolute;
+  right: -5%;
+  height: 100%;
+  width: 20%;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 9%, transparent 9%);
+  background-position: 0% 0%;
+  background-size: 12vmin 12vmin;
+  -webkit-transition: opacity 800ms ease, background-size 800ms ease;
+  transition: opacity 800ms ease, background-size 800ms ease;
+}
+
+.project .work:hover ~ .dots {
+  background-size: 11vmin 11vmin;
+  opacity: 0.5;
+}
+
+.project .work:hover .icon {
+  color: #1a1a1a;
+}
+
+.project .work:hover .container {
+  width: 100%;
+  height: 100%;
+}
+
+.project .work:hover .container span {
+  color: #1a1a1a;
+}
+
+.project .work::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  background-color: #eeeeee;
+  bottom: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.project .work:hover:before {
+  height: 100%;
+}
+
+.project .patterns {
+  position: absolute;
+}
+
+.active {
+  background-color: black;
+  background-color: #1a1a1a;
+}
+/*# sourceMappingURL=project.css.map */

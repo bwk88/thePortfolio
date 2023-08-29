@@ -4,7 +4,9 @@ html {
 }
 
 .app {
+  overflow: hidden;
   height: 100vh;
+  font-family: 'Poppins', sans-serif;
 }
 
 .app .sections {
